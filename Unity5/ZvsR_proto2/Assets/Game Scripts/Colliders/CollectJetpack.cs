@@ -3,9 +3,11 @@ using System.Collections;
 
 public class CollectJetpack : MonoBehaviour {
 
-	void OnTriggerEnter (Collider player){
-		GameObject jetpack = GameObject.Find ("Jetpack");
-		Destroy (jetpack);
-		GameData.jetpackCollected = true;
+	void OnTriggerEnter (Collider target){
+		if (target.gameObject.tag.Equals ("Player") == true) {
+			GameObject jetpack = GameObject.Find ("Jetpack");
+			Destroy (jetpack);
+			GameData.jetpackCollected = true;
+		}
 	}
 }

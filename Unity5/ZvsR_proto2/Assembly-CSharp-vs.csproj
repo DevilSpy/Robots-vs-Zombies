@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{E9D0FAC0-DACC-B578-F967-6DBAE3B4F5A1}</ProjectGuid>
+	<ProjectGuid>{AB8C7120-35A9-0057-4A50-D7B79729B8E8}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,12 +46,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Game Scripts\CharacterMovements\MoveRobot.cs" />
-     <Compile Include="Assets\Game Scripts\CharacterMovements\MoveZombie.cs" />
+     <Compile Include="Assets\Game Scripts\Characters\EZombieMove.cs" />
+     <Compile Include="Assets\Game Scripts\Characters\EnemyHealth.cs" />
+     <Compile Include="Assets\Game Scripts\Characters\MoveRobot.cs" />
+     <Compile Include="Assets\Game Scripts\Characters\MoveZombie.cs" />
+     <Compile Include="Assets\Game Scripts\Characters\Weapon.cs" />
      <Compile Include="Assets\Game Scripts\Colliders\CollectJetpack.cs" />
      <Compile Include="Assets\Game Scripts\Colliders\CollectSwimsuit.cs" />
      <Compile Include="Assets\Game Scripts\Colliders\FallOffTrigger.cs" />
+     <Compile Include="Assets\Game Scripts\Colliders\RooftopsComplete.cs" />
      <Compile Include="Assets\Game Scripts\Colliders\WaterTrigger.cs" />
+     <Compile Include="Assets\Game Scripts\Colliders\ZombieHit.cs" />
      <Compile Include="Assets\Game Scripts\ControllingGame\GameData.cs" />
      <Compile Include="Assets\Game Scripts\ControllingGame\LevelStart.cs" />
      <Compile Include="Assets\Game Scripts\Environment\Falloff.cs" />
@@ -62,11 +67,14 @@
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\ZRNAssets\005339_08932_25_14\Shaders\su_Double_and_Clip.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\ZRNAssets\005339_08932_25_14\Shaders\su_VertexCol_1UV_Single.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\ZRNAssets\005339_08932_25_14\Documents\ReadMe.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>F:/koulujuttuja/Game_Development/Unity/ZvsR_proto2/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>D:/G7601/ZvsR_proto5/ZvsR_proto5/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -74,7 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{3DE1E5CF-9C00-2AF0-A08F-297BFBF480F1}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+      <Project>{99B46E04-88AB-5502-B12F-EB756CAAB01F}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

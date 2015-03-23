@@ -5,8 +5,8 @@ public class LevelStart : MonoBehaviour {
 
 	void Start()
 	{
-		GameData.jetpackCollected = false;
-		GameData.swimsuitCollected = false;
+		//GameData.jetpackCollected = false;
+		//GameData.swimsuitCollected = false;
 		Debug.Log (GameData.chosenCharacter);
 		if (GameData.chosenCharacter == "robot") {
 			GameObject zombie = GameObject.Find ("PlayerZ");
